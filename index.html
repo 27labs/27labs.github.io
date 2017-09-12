@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title>27labs</title>
-        <meta name="description" content="27labs is just a software collective">
+        <meta name="description" content="27labs is simple, reductive, absurd.">
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/favicon.ico" type="image/x-icon">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -29,56 +29,48 @@
                 font: inherit;
                 vertical-align: baseline;
             }
+
             body {
-                line-height: 1;
-                font-family: 'Space Mono', monospace;
-                min-height: 100%;
-                height: 100%;
-                color: rgba(59, 59, 59, 0.5);
-            }
-            html {
-                height: 100%;
-            }
-            body {
-
-            }
-            .container {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                min-height: 100%;
-            }
-            .container-item {
-                max-width: 50%;
+                margin: 70px 100px;
+                background-color: #fff;
+                text-align: left;
+                font-family: "Lucida Grande", "Helvetica Neue", Helvetica, sans-serif;
+                color: #ccc;
             }
 
-            .container-item--top {
-                align-self: flex-start;
+            #container {
+                width: 500px;
             }
 
-            .container-item--bottom {
-                align-self: flex-end;
+            a, a:link, a:visited, a:hover {
+                color: #ccc;
+                text-decoration: underline;
+            }
+
+            .logo {
+                margin: 0;
+            }
+
+            h2 {
+                font-size: 155%;
+                font-weight: normal;
+                line-height: 1.6em;
+                color: #999;
+                margin: 2em 0;
+            }
+
+            footer {
+                font-size: 65%;
+                font-style: normal;
+                margin: 4em 0 8em;
             }
         </style>
     </head>
     <body>
-        <div class="container">
-            <div class="container-item container-item--top"></div>
-            <div class="container-item">
-                <p align="center">
-                    <img src="img/27l.png" height="163" width="332" /> <br>
-                    <span></span>
-                </p>
-            </div>
-            <div class="container-item container-item--bottom"></div>
+        <div id="container">
+            <div class="logo"><img src="/img/logo.png" width="114" alt="27labs" /></div>
+            <h2>Proudly based in São Paulo, Brazil, 27labs is a one-man company that delivers specially crafted bits for demanding customers.</h2>
+            <footer>&copy; 2017 27labs</footer>
         </div>
-        <link href="https://fonts.googleapis.com/css?family=Cutive+Mono" rel="stylesheet">
-        <script type="text/javascript">
-            (function() {
-                var b = ['v', 'j'],
-                    p = b[Math.floor(Math.random() * b.length)];
-                document.querySelector('span').innerText = [p, '@', '27labs', '.io'].join('');
-            })();
-        </script>
     </body>
 </html>
